@@ -1,0 +1,21 @@
+#gallery img {
+    width: 600px;
+    height: 400px;
+}
+
+.intro {font-family: 'Courier New', Courier, monospace; color: coral; text-align: center; font-weight: bold; font-size: larger; 
+    
+} 
+
+.main {
+    background-color: turquoise;
+}
+
+.input {
+    border: 4px solid yellow;
+    width: 1px 1px 1px 1px;
+    margin: 4px;
+    border-width: 3px;
+    border-radius: 4px;
+    
+}
