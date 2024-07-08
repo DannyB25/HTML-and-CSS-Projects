@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <!--HEAD-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>Dan Brion's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+    </head>
+
+    <!--BODY-->
+    <body class="Background">
+
+        <!--NAVBAR-->
+            <div class="Navbar">
+                <a class="active" href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#GitHub">GitHub</a>
+                <a href="#Contact">Contact</a>
+            </div>
+
+        <!--BREAKS ALLOW FOR SPACE BETWEEN NAVBAR AND THE HEADING-->
+        <br>
+        <br>
+
+        <!--BACKGROUND VIDEO-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./images/Typing_Video.mp4" type="video/mp4">
+                Your Browser does not support this video.
+            </video>
+        </div>
+
+        <!--VIDEO TEXT-->
+        <div class="Video_Text">
+            <h1 class="white-text">Dan Brion's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>The future belongs to those who believe in the beauty of their dreams.</q>
+                    <br>
+                    -Eleanor Roosevelt
+                    <br>
+                    <br>
+                    Hello! My name is Dan Brion and I am happy to have you visiting my portfolio! Please look around to learn more about myself and my background.
+                    <br>
+                    <br>
+                    Thanks for stopping by! I hope we can connect in the future! 
+                </p>
+            </strong>
+        </div>
+
+        <!--ABOUT SECTION-->
+        <div class="Row" id="About">
+            <!--LEFT COLUMN-->
+            <div class="Column_2">
+                <img src="./images/hello.jpg" alt="Hello!">
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a burgeoning software developer who has fallen in love with programming. I live in Portland, OR with my two dogs and my girlfriend. When not learning about coding, you can find me listening to or playing music, enjoying the outdoors and following The Portland Trail Blazers.
+                    <br>
+                    <br>
+                    I am currently a student at <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy's</a> Software Developer Boot Camp, and I am trained in HTML, CSS, and Python, with more languages to come!
+                    <br>
+                    <br>
+                    I will be finishing up my bootcamp in October 2024 and then I will be seeking a junior developer position where I can be a positive addition to any group. If you are interested in me becoming part of your team, please <a href="#Contact">contact</a> me below! 
+                </p>
+            </div>
+        </div>
+
+        <!--GITHUB SECTION-->
+        <div class="Row" id="GitHub">
+            <!--LEFT COLUMN-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    Please click below to view my coding projects on GitHub. 
+                    <br>
+                    <p class="center"><a href="https://github.com/DannyB25" target="_blank">My projects on GitHub</a></p>
+                </p>
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="Column_2">
+                <a href="https://github.com/the-tech-academy" target="_blank"><img src="./images/GitHub.jpg" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--CONTACT SECTION-->
+        <div class="Row" id="Contact">
+            <!--CONTACT IMAGE, LEFT COLUMN-->
+            <div class="Column_2 Column_tall">
+                <img src="./images/connect.jpg" alt="Connect">
+            </div>
+            <!--CONTACT FORM, RIGHT COLUMN-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--THIS SPECIFIES WHERE AND HOW TO SEND THE FORM DATA; WE ARE LEAVING IT BLANK-->
+                <form action="https://formspree.io/f/mrbzgjbl" method="POST"><!-- Here we are utilizing a 3rd party service to submit the contact form data-->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+     
+        <!--FOOTER SECTION-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
