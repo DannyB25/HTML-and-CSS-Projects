@@ -1,0 +1,140 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    filter: sepia(100%) drop-shadow(-20px -10px 30px pink);
+    border-radius: 50px;
+}
+
+.center_2 {
+    position: relative;
+    text-align: center;
+    color:red;
+}
+
+.bottom {
+    text-align: center;
+    font-weight: bold;
+}
+
+.head-1 {
+    text-align: center;
+}
+
+.credits {
+    border: 1px solid fuchsia;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 10px;
+    font-weight: bold;
+    color: crimson;
+}
+
+.top_row {
+    background-color: cyan;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: crimson;
+    font-family: fantasy;
+    font-weight: bolder;
+    font-size: 30px;
+    width: 50%;
+    margin: auto;
+}
+
+.time {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: blueviolet;
+    position: fixed; /*sets navbar to fixed position*/
+    top: 0; /*positions navbar at the top of the page*/
+    width: 100%; /*full width of the screen*/
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: yellowgreen;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: navajowhite;
+}
+
+.navbar a:hover {
+    background: crimson;
+    margin-top: 0;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 10%;
+    color: white;
+    background-color: dodgerblue;
+    height: 70px;
+    width: auto;
+}
+
+a.red:hover, a.red:active {
+    color: red;
+}
+
+a.enlarge:hover, a.enlarge:active {
+    font-size: 110%;
+}
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #049e0c;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 500%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .top_right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
