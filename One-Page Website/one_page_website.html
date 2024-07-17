@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Flooring</title>
-    <link rel="stylesheet" href="./CSS/one_page_website.css">
+    <link rel="stylesheet" href="CSS/one_page_website.css">
+    <script src="JS/one_page_website.js" defer></script>
 </head>
 
 <body class="main">
@@ -60,56 +61,103 @@
     <section>
         <div id="gallery">
             <h1><u>Gallery</u></h1>
-            <div>
 
                 <!--PHOTO CONTAINER 1-->
-                <div>
-                    <div>
-                        <img src="images/thumb/thumbnail_1.webp" alt="Hardwood">
-                        <div>
+            <div class="row">
+                    <div class="column">
+                        <div class="description">
                             <h3>Hardwoods</h3>
-                            <p>We have the choicest hardwoods! Sourced ethically and sustainably from across the world. Our selection and pricing is unparalleled!</p>
+                            <p>We have the choicest hardwoods! Sourced ethically and sustainably from 
+                                across the world. Our selection and pricing is unparalleled!</p>
                         </div>
+                      <img src="images/actual/image(1)_thumb.png" style="width:100%" 
+                      onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                     </div>
-                </div>
                 <!--END PHOTO CONTAINER 1-->
 
                 <!--PHOTO CONTAINER 2-->
-                <div>
-                    <div>
-                        <img src="images/thumb/thumbnail_2.jfif" alt="Tile">
-                        <div>
-                            <h3>Tile</h3>
-                            <p>We have tile materials from porcelain to ceramic and colors from white to black. Whatever you are looking for, we have the tile that is right for you and your budget!</p>
-                        </div>
+                <div class="column">
+                    <div class="description">
+                        <h3>Tile</h3>
+                        <p>We have tile materials from porcelain to ceramic and colors from white to black. 
+                            Whatever you are looking for, we have the tile that is right for you and your budget!</p>
                     </div>
+                    <img src="images/actual/image(2)_thumb.jpg" style="width:100%" 
+                    onclick="openModal();currentSlide(2)" class="hover-shadow cursor">                        
                 </div>
                 <!--END PHOTO CONTAINER 2-->
 
                 <!--PHOTO CONTAINER 3-->
-                <div>
-                    <div>
-                        <img src="images/thumb/thumbnail_3.webp" alt="Linoleum">
-                        <div>
-                            <h3>Linoleum</h3>
-                            <p>Looking for a quality, aesthetically pleasing and affordable flooring material? Look no further than our great selection of linoleum!</p>
-                        </div>
+                <div class="column">
+                    <div class="description">
+                        <h3>Linoleum</h3>
+                        <p>Looking for a quality, aesthetically pleasing and affordable flooring material? 
+                            Look no further than our great selection of linoleum!</p>
                     </div>
+                    <img src="images/actual/image(3)_thumb.png" style="width:100%" 
+                    onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
                 </div>
                 <!--END PHOTO CONTAINER 3-->
 
                 <!--PHOTO CONTAINER 4-->
-                <div>
-                    <div>
-                        <img src="images/thumb/thumbnail_4.jpg" alt="Carpet">
-                        <div>
-                            <h3>Carpet</h3>
-                            <p>There is nothing like the comfort of carpet on your feet! Make it a part of your home today!</p>
-                        </div>
+                <div class="column">
+                    <div class="description">
+                        <h3>Carpet</h3>
+                        <p>There is nothing like the comfort of carpet on your feet! Make it a part of your home today!</p>
                     </div>
+                    <img src="images/actual/image(4)_thumb.jpg" style="width:100%" 
+                    onclick="openModal();currentSlide(4)" class="hover-shadow cursor">    
                 </div>
                 <!--END PHOTO CONTAINER 4-->
+            </div>    
+
+        <!--The Modal/Lightbox-->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/thumb/thumbnail_1.webp" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/thumb/thumbnail_2.jfif" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/thumb/thumbnail_3.webp" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/thumb/thumbnail_4.jpg" style="width:100%">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+          
+          
+              <div class="column">
+                <img class="demo cursor" src="images/thumb/thumbnail_1.webp" style="width:100%" onclick="currentSlide(1)" alt="Hardwood">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/thumb/thumbnail_2.jfif" style="width:100%" onclick="currentSlide(2)" alt="Tile">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/thumb/thumbnail_3.webp" style="width:100%" onclick="currentSlide(3)" alt="Linoleum">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/thumb/thumbnail_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Carpet">
+              </div>
             </div>
+          </div>
         </div>
     </section>
     <!--END GALLERY-->
